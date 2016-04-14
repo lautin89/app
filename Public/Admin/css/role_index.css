@@ -1,0 +1,14 @@
+/*
+Copyright(c)2015 All rights reserved.
+@Licenced  http://www.w3.org
+@Author  LiuTian<1538731090@qq.com> liutian_jiayi
+@Create on 2016-3-22 16:15:15
+@Version 1.0
+*/
+/* 
+    Created on : 2016-3-22, 16:15:15
+    Author     : Administrator
+*/
+table tr td:last-child {
+	font:13px Arial;
+}

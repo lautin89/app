@@ -1,0 +1,25 @@
+/*
+Copyright(c)2015 All rights reserved.
+@Licenced  http://www.w3.org
+@Author  LiuTian<1538731090@qq.com> liutian_jiayi
+@Create on 2016-3-22 20:00:13
+@Version 1.0
+*/
+/* 
+    Created on : 2016-3-22, 20:00:13
+    Author     : Administrator
+*/
+table tr.hide {
+	display:none;
+}
+
+table tr.hide td input[type="text"] {
+	height: 18px;
+	font:14px/18px Arial,微软雅黑;
+}
+
+table tr.hide td {
+	border-width:0;
+	border-top-width:1px;
+	text-align: center;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>wBox链接文件</title>
+<script type="text/javascript" src="./jquery1.4.2.js"></script> 
+<script type="text/javascript" src="./mapapi.js"></script> 
+<script type="text/javascript" src="./wbox.js"></script> 
+<link rel="stylesheet" type="text/css" href="wbox/wbox.css" />
+</head>
+
+<body>
+<script>        
+function wBox_init(wBox_set_obj){
+	var wBox=$("isFrame").wBox({
+			title:wBox_set_obj.title||"消息框",//设置标题,默认标题为消息框
+			opacity: wBox_set_obj.opacity||0.5,//背景透明度，1为不透明，0为完全透明，默认设置为半透明
+			drag:true,//默认状态为可以移动的
+			target:wBox_set_obj.target
+		});
+	return wBox;
+}
+</script>
+</body>
+</html>

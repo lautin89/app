@@ -1,0 +1,310 @@
+/*
+Copyright(c)2015 All rights reserved.
+@Licenced  http://www.w3.org
+@Author  LiuTian<1538731090@qq.com> liutian_jiayi
+@Create on 2016-3-16 14:54:16
+@Version 1.0
+*/
+/*------------------预定义样式-------------------*/
+body {
+	margin:0;
+	padding:0;
+	font:14px/20px Arial,微软雅黑,宋体;
+	color:#333;
+}
+
+.w100pc {
+	width : 100%;
+	overflow: auto;
+}
+
+.w1000px {
+	width:1000px;
+	margin:0 auto;
+	overflow: auto;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.clear {
+	clear : both;
+}
+.fs12px {
+	font-size:12px;
+}
+.fs11px {
+	font-size:11px;
+}
+.fs13px {
+	font-size:13px;
+}
+.fs14px {
+	font-size:14px;
+}
+.fs15px {
+	font-size:15px;
+}
+.fs16px {
+	font-size:16px;
+}
+.fs18px {
+	font-size:18px;
+}
+a:link, a {
+	text-decoration: none;
+	color:#666;
+}
+a:hover {
+	color:#333;
+	text-decoration: underline;
+}
+a:visited {
+	color:#666;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none inside;
+}
+
+/*------------------HEADER 和 FOOTER 公共样式-----------------------*/
+div#header {
+	background:#F6FAFE;
+	height:30px;
+	line-height: 30px;
+	border-bottom:2px solid  #9B410E;
+}
+
+div#main {
+	
+}
+div#main .mainLeft {
+	width:197px;
+	border-right:3px solid  #9B410E;
+}
+div#main .mainLeft ul li.menu {
+	border-bottom:1px solid #ccc;
+	text-align: center;
+	font:bold 15px/30px Arial,微软雅黑,宋体;
+	letter-spacing:3px;
+	background:#F6FAFE;
+}
+div#main .mainLeft ul li.submenu {
+	list-style:circle inside none;
+	background:#fff;
+	text-align: center;
+	border-bottom:1px solid #eee;
+}
+div#main .mainLeft ul li a {
+	font:14px/30px Arial,宋体;
+	color: #333;
+	letter-spacing: 1px;
+}
+div#main .mainRight {
+	width:780px;
+	padding:10px;
+	font:14px 宋体;
+}
+div#footer {
+	background:#F6FAFE;
+	height:50px;
+	font:16px/50px Arial,宋体;
+	text-align: center;
+	color:#666;
+}
+/*------------------TABLE 公共样式------------------------*/
+.mainRight table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+}
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+/***********zebra样式****************/
+.zebra td, .zebra th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.zebra tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+.zebra th {
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #eee);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #eee);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #eee); 
+    background-image:         linear-gradient(top, #f5f5f5, #eee);
+}
+
+.zebra th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+.zebra th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.zebra tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;  
+}
+
+.zebra tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.zebra tfoot td:only-child{
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px
+}
+
+/*------------小素材图标样式-----------*/
+.forward {
+	
+}
+.back {
+	display:inline-block;
+	width:15px;
+	height:16px;
+	float:left;
+	background:url("../image/title.png") no-repeat -145px -30px;
+}
+.edit{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	background:url("../image/title.png") no-repeat -80px -28px;
+}
+.remove{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	background:url("../image/title.png") no-repeat -302px -28px;
+}
+
+/*--------------------FORM表单公共样式------------------*/
+form.addEdit {
+	font:14px/30px Arial,宋体;
+	margin:0 0 0 50px;
+}
+
+form.addEdit input[type="text"], form input[type="password"] {
+	font:14px/20px Arial,宋体,"微软雅黑";
+	width:200px;
+	height:24px;
+	border-radius: 5px;
+	border:1px solid #999;
+	padding:0 10px;
+}
+form.addEdit select {
+	font:14px/20px 微软雅黑;
+	height:24px;
+}
